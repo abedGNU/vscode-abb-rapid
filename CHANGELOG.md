@@ -12,14 +12,18 @@
 ### Removed
 ### Issues
 
-## [0.1.0] - 2018-09-17
+## [0.2.0] - yyyy-mm-dd
 ### Notes
 ### Fixed
 ### Added
-
 ### Changed
-
 ### Deprecated
 ### Removed
 ### Issues
+
+## [0.1.0] - 2018-09-17
+### Notes
+
+First Release
+
 
