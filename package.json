@@ -1,12 +1,16 @@
 {
     "name": "vscode-rapid",
-    "displayName": "vscode-rapid",
-    "description": "rapid Robox language",
+    "displayName": "RAPID",
+    "description": "ABB RAPID Robot programming language",
     "version": "0.0.1",
-    "publisher": "abed",
+    "publisher": "Abed",
     "engines": {
         "vscode": "^1.25.0"
     },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/abedGNU/vscode-abb-rapid.git"
+	},
     "categories": [
         "Programming Languages"
     ],
