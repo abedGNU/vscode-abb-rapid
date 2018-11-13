@@ -1,102 +1,102 @@
 {
-    "name": "vscode-rapid",
-    "displayName": "RAPID",
-    "description": "ABB RAPID Robot programming language",
-    "version": "0.0.1",
-    "publisher": "Abed",
-    "engines": {
-        "vscode": "^1.25.0"
-    },
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/abedGNU/vscode-abb-rapid.git"
-	},
-    "categories": [
-        "Programming Languages"
+  "name": "vscode-rapid",
+  "displayName": "RAPID",
+  "description": "ABB RAPID Robot programming language",
+  "version": "0.1.0",
+  "publisher": "Abed",
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abedGNU/vscode-abb-rapid.git"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "rapid",
+        "aliases": [
+          "rapid",
+          "rapid"
+        ],
+        "extensions": [
+          "mod",
+          "sys"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "rapid",
-                "aliases": [
-                    "rapid",
-                    "rapid"
-                ],
-                "extensions": [
-                    "mod",
-                    "sys"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "rapid",
-                "scopeName": "source.rapid",
-                "path": "./syntaxes/rapid.tmLanguage.json"
-            }
-		],
-		"snippets": [
-			{
-				"language": "rapid",
-				"path": "./snippets/rapid.json"
-			}
-		],
-        "commands": [
-            {
-                "command": "rapid.editFormatterParameters",
-                "title": "rapid: Edit Formatter Parameters"
-            }
-        ],
-        "configuration": {
-			"type": "object",
-			"title": "rapid",
-			"properties": {
-				"rapid.formatter.engine": {
-					"type": "string",
-					"default": "",
-					"description": "Choose the Formatter engine to be used",
-					"enum": [
-						"jcf",
-						"ptop"
-					]
-				},
-				"rapid.formatter.enginePath": {
-					"type": "string",
-					"default": "",
-					"description": "Indicates the Formatter app path"
-				},
-				"rapid.formatter.engineParameters": {
-					"type": "string",
-					"default": "",
-					"description": "Indicates the configuration file for the selected engine"
-				},
-				"rapid.format.indent": {
-					"type": "number",
-					"default": 2,
-					"description": "The number of spaces used for indentation"
-				},
-				"rapid.format.wrapLineLength": {
-					"type": "number",
-					"default": 80,
-					"description": "Maximum amount of characters per line"
-				},
-				"rapid.tags.autoGenerate": {
-					"type": "boolean",
-					"default": true,
-					"description": "Controls if the extension should automatically generate tags in projects opened for the first time"
-				},
-				"rapid.codeNavigation": {
-					"type": "string",
-					"default": "workspace",
-					"scope": "resource",
-					"description": "Select how the code navigation should work",
-					"enum": [
-						"workspace",
-						"file"
-					]
-				}
-			}
-		}
+    "grammars": [
+      {
+        "language": "rapid",
+        "scopeName": "source.rapid",
+        "path": "./syntaxes/rapid.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "rapid",
+        "path": "./snippets/rapid.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "rapid.editFormatterParameters",
+        "title": "rapid: Edit Formatter Parameters"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "rapid",
+      "properties": {
+        "rapid.formatter.engine": {
+          "type": "string",
+          "default": "",
+          "description": "Choose the Formatter engine to be used",
+          "enum": [
+            "jcf",
+            "ptop"
+          ]
+        },
+        "rapid.formatter.enginePath": {
+          "type": "string",
+          "default": "",
+          "description": "Indicates the Formatter app path"
+        },
+        "rapid.formatter.engineParameters": {
+          "type": "string",
+          "default": "",
+          "description": "Indicates the configuration file for the selected engine"
+        },
+        "rapid.format.indent": {
+          "type": "number",
+          "default": 2,
+          "description": "The number of spaces used for indentation"
+        },
+        "rapid.format.wrapLineLength": {
+          "type": "number",
+          "default": 80,
+          "description": "Maximum amount of characters per line"
+        },
+        "rapid.tags.autoGenerate": {
+          "type": "boolean",
+          "default": true,
+          "description": "Controls if the extension should automatically generate tags in projects opened for the first time"
+        },
+        "rapid.codeNavigation": {
+          "type": "string",
+          "default": "workspace",
+          "scope": "resource",
+          "description": "Select how the code navigation should work",
+          "enum": [
+            "workspace",
+            "file"
+          ]
+        }
+      }
     }
+  }
 }
