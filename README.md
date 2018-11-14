@@ -8,11 +8,11 @@ ABB RAPID Robotic language for Vscode (Visual Studio Code)
 
 Syntax highlight
 
-![screenshot](images/syntax.png)
+(images/syntax.png)
 
 Code completion
 
-![screenshot](images/completion.gif)
+images/completion.gif)
 
 ## TODO
 
