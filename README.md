@@ -22,4 +22,6 @@ Initial release
 
 ## TODO
 
-Complete syntax highlighting, autocompletion and routine outline
+- Complete syntax highlighting
+- Autocompletion
+- Routine and function outline (function list)
